@@ -11,5 +11,6 @@ export default class Page {
     */
     open (path) {
         return browser.url(`http://clm.seliselocal.com`)
+        
     }
 }
