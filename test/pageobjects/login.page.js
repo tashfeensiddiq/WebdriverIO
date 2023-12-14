@@ -60,6 +60,10 @@ class LoginPage extends Page {
         return $("span=Abmelden");
     }
 
+    get ToastMessage () {
+        return $("p=1 Einladung wurde gesendet");
+    }
+
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -81,7 +85,7 @@ class LoginPage extends Page {
         await this.btnUserAdd.click();
         await browser.pause(3000);
 
-        await this.inputEmail.setValue("auto3@yopmail.com");
+        await this.inputEmail.setValue("auto6@yopmail.com");
         await browser.pause(3000);
 
         await this.inputOrg.click();
@@ -97,7 +101,9 @@ class LoginPage extends Page {
         await browser.pause(3000);
 
         await this.createUser.click();
-        await browser.pause(3000);
+
+        this.Toast();
+        await expect(await this.ToastMessage).toHaveTextContaining('1 Einladung wurde gesendet')
 
         await this.clickUser.click();
         await browser.pause(1500);
@@ -108,6 +114,16 @@ class LoginPage extends Page {
         await browser.browserClose;
 
 
+    }
+
+    async Toast ()  {
+        const elem = await $("p=1 Einladung wurde gesendet")
+        await elem.waitUntil(async function () {
+            return (await this.getText()) === '1 Einladung wurde gesendet'
+        }, {
+            timeout: 10000,
+            timeoutMsg: 'expected text to be different after 5s'
+        })
     }
 
     /**
