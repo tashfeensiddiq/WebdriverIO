@@ -81,7 +81,7 @@ class LoginPage extends Page {
         await this.btnUserAdd.click();
         await browser.pause(3000);
 
-        await this.inputEmail.setValue("auto2@yopmail.com");
+        await this.inputEmail.setValue("auto3@yopmail.com");
         await browser.pause(3000);
 
         await this.inputOrg.click();
@@ -94,6 +94,9 @@ class LoginPage extends Page {
         await browser.pause(3000);
 
         await this.inputRoleType.click();
+        await browser.pause(3000);
+
+        await this.createUser.click();
         await browser.pause(3000);
 
         await this.clickUser.click();
