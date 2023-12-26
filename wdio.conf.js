@@ -1,3 +1,8 @@
+import environment from "./environment.js";
+
+let ENV = process.argv.find((val) => ['dev','stage', 'local'].includes(val));
+if (!ENV) ENV = 'stage';
+
 export const config = {
     //
     // ====================
@@ -21,16 +26,22 @@ export const config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        './test/specs/**/*.js'
-    ],
+    specs: ['./test/specs/**/*.js'],
+
+    suites: {
+        login: [
+            './test/specs/test.e2e.js'
+        
+        ],
+    },
+
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
     ],
     //
     // ============
-    // Capabilities
+    // Capbilities
     // ============
     // Define your capabilities here. WebdriverIO can run multiple capabilities at the same
     // time. Depending on the number of capabilities, WebdriverIO launches several test
@@ -86,7 +97,7 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: environment[process.env.ENV],
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
