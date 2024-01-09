@@ -33,6 +33,10 @@ export const config = {
             './test/specs/test.e2e.js'
         
         ],
+
+        otherfeature: [
+            // ...
+        ],
     },
 
     // Patterns to exclude.
