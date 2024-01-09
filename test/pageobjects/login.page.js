@@ -1,5 +1,8 @@
 import { $ } from '@wdio/globals'
 import Page from './page.js';
+import locators from "./locators.js";
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -22,6 +25,10 @@ class LoginPage extends Page {
 
     get btnTeams () {
         return $("//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]");
+    }
+
+    get btnOrgAdd () {
+        return $("span=UNTERNEHMEN ZUWEISEN");
     }
 
     get btnUserAdd () {
@@ -82,6 +89,29 @@ class LoginPage extends Page {
         await this.btnTeams.click();
         await browser.pause(10000);
 
+        await this.btnOrgAdd.click();
+        await browser.pause(3000);
+
+        await locators.assignorg.OrgLogoAdd.click();
+        await browser.pause(2000);
+
+      
+
+        //await locators.assignorg.OrgLogoAddModal.click();
+
+   
+
+        const filePath = '../data/files/logo1.png'
+        const element = await locators.assignorg.OrgLogoAddModal;
+        await this.fileUpload(filePath, element)
+        await locators.assignorg.OrgLogoAddModalSave.click();
+
+    
+
+
+
+        /*
+
         await this.btnUserAdd.click();
         await browser.pause(3000);
 
@@ -112,9 +142,26 @@ class LoginPage extends Page {
         await browser.pause(10000);
 
         await browser.browserClose;
-
+*/
 
     }
+
+    async fileUpload(url, locator) {
+        const __filename = fileURLToPath(import.meta.url);
+        const __dirname = path.dirname(__filename);
+        const filePath = path.join(__dirname, url);
+    
+        const upload_file_element = await locator;
+        await upload_file_element.scrollIntoView({ block: 'end' });
+        await browser.execute(async (e) => {
+          e.style.display = 'block';
+        }, upload_file_element);
+    
+        await upload_file_element.waitForDisplayed();
+        await upload_file_element.setValue(filePath);
+      }
+
+    /*
 
     async Toast ()  {
         const elem = await $("p=1 Einladung wurde gesendet")
@@ -125,6 +172,7 @@ class LoginPage extends Page {
             timeoutMsg: 'expected text to be different after 5s'
         })
     }
+    */
 
     /**
      * overwrite specific options to adapt it to page object

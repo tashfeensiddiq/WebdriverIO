@@ -66,6 +66,7 @@ export const config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
+        maxInstances: 1,
         browserName: 'chrome',
         browserVersion: 'stable'
     }],
