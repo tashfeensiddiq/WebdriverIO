@@ -1,5 +1,5 @@
 import { expect } from '@wdio/globals'
-import LoginPage from '../pageobjects/login.page.js'
+import LoginPage from '../pageobjects/LoginPage.js'
 import SecurePage from '../pageobjects/secure.page.js'
 import ToHaveTextContaining from '../pageobjects/ToHaveTextContaining2.js'
 import ToHaveTextContaining2 from '../pageobjects/ToHaveTextContaining2.js'

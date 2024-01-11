@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="My Login application" timestamp="2024-01-11T14:14:21" time="600.035" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application"/>
+      <property name="capabilities" value="chrome.120_0_6099_109.windows"/>
+      <property name="file" value="file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="should login with valid credentials" time="600.021">
+      <failure/>
+      <error message="Timeout of 600000ms exceeded. The execution in the test &quot;My Login application should login with valid credentials&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\Selise_Automation\WebdriverIO\test\specs\test.e2e.js)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/url - {"url":"http://clm.seliselocal.com/"}
+RESULT: {"url":"http://clm.seliselocal.com/"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"css selector","value":"[formcontrolname='Email']"}
+RESULT: {"using":"css selector","value":"[formcontrolname='Email']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/elements - {"using":"css selector","value":"[formcontrolname='Email']"}
+RESULT: {"using":"css selector","value":"[formcontrolname='Email']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/elements - {"using":"css selector","value":"[formcontrolname='Email']"}
+RESULT: {"using":"css selector","value":"[formcontrolname='Email']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"css selector","value":"[formcontrolname='Email']"}
+RESULT: {"using":"css selector","value":"[formcontrolname='Email']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/F209C2141A57B2DE7A6B41B46680A330_element_11/clear - {}
+RESULT: {}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/F209C2141A57B2DE7A6B41B46680A330_element_11/value - {"text":"tupm@yopmail.com"}
+RESULT: {"text":"tupm@yopmail.com"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"css selector","value":"[formcontrolname='Password']"}
+RESULT: {"using":"css selector","value":"[formcontrolname='Password']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/F209C2141A57B2DE7A6B41B46680A330_element_9/clear - {}
+RESULT: {}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/F209C2141A57B2DE7A6B41B46680A330_element_9/value - {"text":"CLMAdmin2024"}
+RESULT: {"text":"CLMAdmin2024"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"css selector","value":"button[aria-label='LOGIN']"}
+RESULT: {"using":"css selector","value":"button[aria-label='LOGIN']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"F209C2141A57B2DE7A6B41B46680A330_element_16","ELEMENT":"F209C2141A57B2DE7A6B41B46680A330_element_16"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8097 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"F209C2141A57B2DE7A6B41B46680A330_element_16","ELEMENT":"F209C2141A57B2DE7A6B41B46680A330_element_16"}]}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"F209C2141A57B2DE7A6B41B46680A330_element_16","ELEMENT":"F209C2141A57B2DE7A6B41B46680A330_element_16"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5151 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"F209C2141A57B2DE7A6B41B46680A330_element_16","ELEMENT":"F209C2141A57B2DE7A6B41B46680A330_element_16"}]}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"css selector","value":"button[aria-label='LOGIN']"}
+RESULT: {"using":"css selector","value":"button[aria-label='LOGIN']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/F209C2141A57B2DE7A6B41B46680A330_element_16/click - {}
+RESULT: {}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/CAF644BEA505DDB6846163C7792836DC_element_103/click - {}
+RESULT: {}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"UNTERNEHMEN ZUWEISEN\"] | .//span[not(.//span[normalize-space(text()) = \"UNTERNEHMEN ZUWEISEN\"]) and normalize-space() = \"UNTERNEHMEN ZUWEISEN\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"UNTERNEHMEN ZUWEISEN\"] | .//span[not(.//span[normalize-space(text()) = \"UNTERNEHMEN ZUWEISEN\"]) and normalize-space() = \"UNTERNEHMEN ZUWEISEN\"]"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/CAF644BEA505DDB6846163C7792836DC_element_125/click - {}
+RESULT: {}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"HOCHLADEN\"] | .//span[not(.//span[normalize-space(text()) = \"HOCHLADEN\"]) and normalize-space() = \"HOCHLADEN\"]"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element/CAF644BEA505DDB6846163C7792836DC_element_142/click - {}
+RESULT: {}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/element - {"using":"css selector","value":"input[type='file']"}
+RESULT: {"using":"css selector","value":"input[type='file']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/elements - {"using":"css selector","value":"input[type='file']"}
+RESULT: {"using":"css selector","value":"input[type='file']"}
+COMMAND: POST /session/329e845d01bf31c6e6b0fe7bab0e6446/execute/sync - {"script":"return (async (e) => {\n          e.style.display = 'block';\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"CAF644BEA505DDB6846163C7792836DC_element_148","ELEMENT":"CAF644BEA505DDB6846163C7792836DC_element_148"}]}
+RESULT: {"script":"return (async (e) => {\n          e.style.display = 'block';\n        }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"CAF644BEA505DDB6846163C7792836DC_element_148","ELEMENT":"CAF644BEA505DDB6846163C7792836DC_element_148"}]}
+COMMAND: GET /session/329e845d01bf31c6e6b0fe7bab0e6446/screenshot - {}
+COMMAND: DELETE /session/329e845d01bf31c6e6b0fe7bab0e6446 - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 600000ms exceeded. The execution in the test "My Login application should login with valid credentials" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (D:\Selise_Automation\WebdriverIO\test\specs\test.e2e.js)
+    at createTimeoutError (D:\Selise_Automation\WebdriverIO\node_modules\mocha\lib\errors.js:498:15)
+    at Runnable._timeoutError (D:\Selise_Automation\WebdriverIO\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (D:\Selise_Automation\WebdriverIO\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
