@@ -1,2 +1,7 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"unknown","Thu Jan 11 14:14:21 CET 2024","Thu Jan 11 14:24:21 CET 2024","600035","","My Login application","","","","should login with valid credentials",""
+"unknown","Mon Jan 15 11:52:22 CET 2024","Mon Jan 15 11:52:25 CET 2024","3022","","My Login application","","","","should login with valid credentials",""
+"broken","Mon Jan 15 18:06:29 CET 2024","Mon Jan 15 18:06:59 CET 2024","30514","","My Login application","","","","Add new user",""
+"passed","Mon Jan 15 18:06:59 CET 2024","Mon Jan 15 18:06:59 CET 2024","2","","My Login application","","","","Add organization",""
+"passed","Mon Jan 15 18:06:59 CET 2024","Mon Jan 15 18:07:11 CET 2024","11753","","My Login application","","","","""after all"" hook for My Login application",""
+"passed","Mon Jan 15 18:06:10 CET 2024","Mon Jan 15 18:06:29 CET 2024","19039","","My Login application","","","","""before all"" hook for My Login application",""
+"passed","Mon Jan 15 17:51:48 CET 2024","Mon Jan 15 17:51:48 CET 2024","2","","My Login application","","","","Add organization image",""
