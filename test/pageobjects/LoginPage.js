@@ -46,14 +46,14 @@ class LoginPage extends Page {
        // console.log(await browser.getWindowRect())
 
 
-        await locators.loginpage2.inputUsername.setValue(username);
-        await locators.loginpage2.inputPassword.setValue(password);
+       await locators.loginpage2.inputUsername.setValue(username);
+       await locators.loginpage2.inputPassword.setValue(password);
 
-        await browser.pause(2000);
+       await browser.pause(2000);
 
-        await locators.loginpage2.btnSubmit.waitForClickable();
-        await locators.loginpage2.btnSubmit.click();
-        await browser.pause(10000);
+       await locators.loginpage2.btnSubmit.waitForClickable();
+       await locators.loginpage2.btnSubmit.click();
+       await browser.pause(10000);
 
         await locators.module.btnTeams.click();
         await browser.pause(10000);

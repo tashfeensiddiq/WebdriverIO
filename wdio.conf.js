@@ -33,10 +33,7 @@ export const config = {
     suites: {
         login: ['./test/specs/test.e2e.js'],
         projecttree: ['./test/specs/newsetup.js'],
-
-        otherfeature: [
-            // ...
-        ],
+        otherfeature: ['./test/specs/newsetup.js'],
     },
 
     // Patterns to exclude.
