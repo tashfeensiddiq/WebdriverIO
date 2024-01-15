@@ -20,5 +20,8 @@
     "login": "npx wdio run ./wdio.conf.js --suite login",
     "otherfeature": "npx wdio run ./wdio.conf.js --suite otherfeature",
     "publish": "npx allure generate --clean && npx allure serve allure-results"
+  },
+  "dependencies": {
+    "wdio-video-reporter": "^5.1.0"
   }
 }
