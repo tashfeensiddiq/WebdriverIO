@@ -1,4 +1,6 @@
 import environment from "./environment.js";
+import allure from 'allure-commandline';
+import video from 'wdio-video-reporter';
 
 let ENV = process.argv.find((val) => ['dev','stage', 'local'].includes(val));
 if (!ENV) ENV = 'stage';
@@ -76,6 +78,7 @@ export const config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
+    outputDir: './logs',
     //
     // Set specific log levels per logger
     // loggers:
@@ -140,6 +143,12 @@ export const config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: 
     [
+
+      [video, {
+        saveAllVideos: false,       // If true, also saves videos for successful test cases
+        videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
+      }],
+
         'spec',
         [
           'junit',

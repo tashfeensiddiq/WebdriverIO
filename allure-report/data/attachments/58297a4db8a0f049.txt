@@ -1,9 +1,0 @@
-{
-  "script": "return (async (e) => {\n          e.style.display = 'block';\n        }).apply(null, arguments)",
-  "args": [
-    {
-      "element-6066-11e4-a52e-4f735466cecf": "C42B9D3ABEA7E6FA980326A012C2E3F5_element_157",
-      "ELEMENT": "C42B9D3ABEA7E6FA980326A012C2E3F5_element_157"
-    }
-  ]
-}

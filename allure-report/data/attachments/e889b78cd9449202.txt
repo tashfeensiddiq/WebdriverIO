@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]\"}\n  (Session info: chrome=120.0.6099.109)",
-  "stacktrace": "\tGetHandleVerifier [0x00007FF7AD822142+3514994]\n\t(No symbol) [0x00007FF7AD440CE2]\n\t(No symbol) [0x00007FF7AD2E76AA]\n\t(No symbol) [0x00007FF7AD331860]\n\t(No symbol) [0x00007FF7AD33197C]\n\t(No symbol) [0x00007FF7AD374EE7]\n\t(No symbol) [0x00007FF7AD35602F]\n\t(No symbol) [0x00007FF7AD3728F6]\n\t(No symbol) [0x00007FF7AD355D93]\n\t(No symbol) [0x00007FF7AD324BDC]\n\t(No symbol) [0x00007FF7AD325C64]\n\tGetHandleVerifier [0x00007FF7AD84E16B+3695259]\n\tGetHandleVerifier [0x00007FF7AD8A6737+4057191]\n\tGetHandleVerifier [0x00007FF7AD89E4E3+4023827]\n\tGetHandleVerifier [0x00007FF7AD5704F9+689705]\n\t(No symbol) [0x00007FF7AD44C048]\n\t(No symbol) [0x00007FF7AD448044]\n\t(No symbol) [0x00007FF7AD4481C9]\n\t(No symbol) [0x00007FF7AD4388C4]\n\tBaseThreadInitThunk [0x00007FFBC899257D+29]\n\tRtlUserThreadStart [0x00007FFBC98CAA58+40]\n"
-}

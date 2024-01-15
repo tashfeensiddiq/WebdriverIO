@@ -1,3 +1,0 @@
-{
-  "text": "auto7@yopmail.com"
-}

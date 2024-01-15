@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="My Login application" timestamp="2024-01-15T20:37:24" time="2.697" tests="2" failures="2" errors="2" skipped="0">
+  <testsuite name="My Login application" timestamp="2024-01-15T22:54:22" time="31.32" tests="3" failures="2" errors="2" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="My Login application"/>
       <property name="capabilities" value="chrome.120_0_6099_109.windows"/>
       <property name="file" value="file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js"/>
     </properties>
-    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="before all hook for My Login application" time="2.635">
+    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add new user" time="13.528">
       <failure/>
       <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=120.0.6099.109)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element/F1B18700CAFCAEE07A256DB046E4F7FF_element_106/click - {}
+RESULT: {}
+COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"xpath","value":"//span[contains(text(),'NUTZER ZUWEISEN')]"}
+RESULT: {"using":"xpath","value":"//span[contains(text(),'NUTZER ZUWEISEN')]"}
+COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element/F1B18700CAFCAEE07A256DB046E4F7FF_element_150/click - {}
+RESULT: {}
+COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"css selector","value":"[formcontrolname='Email']"}
+COMMAND: GET /session/1d5f62a9083ba9e35665eea4228e5da9/screenshot - {}
+]]></system-out>
       <system-err><![CDATA[
 no such window: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=120.0.6099.109)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.08661665649946504:10:9)
+    at async LoginPage.createUser (file:///D:/Selise_Automation/WebdriverIO/test/pageobjects/LoginPage.js:51:9)
+    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.42409661029946744:18:9)
 ]]></system-err>
+    </testcase>
+    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add organization" time="0.002">
+      <system-out><![CDATA[
+COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"xpath","value":".//p[normalize-space(text()) = \"TU PM\"] | .//p[not(.//p[normalize-space(text()) = \"TU PM\"]) and normalize-space() = \"TU PM\"]"}
+COMMAND: DELETE /session/1d5f62a9083ba9e35665eea4228e5da9 - {}
+RESULT: {}
+]]></system-out>
     </testcase>
     <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="after all hook for My Login application" time="0.06">
       <failure/>
@@ -27,7 +47,7 @@ from unknown error: web view not found
   (Session info: chrome=120.0.6099.109)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async LoginPage.logoutuser2 (file:///D:/Selise_Automation/WebdriverIO/test/pageobjects/LoginPage.js:113:9)
-    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.08661665649946504:25:9)
+    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.42409661029946744:25:9)
 ]]></system-err>
     </testcase>
   </testsuite>
