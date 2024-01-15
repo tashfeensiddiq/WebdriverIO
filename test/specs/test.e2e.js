@@ -8,22 +8,21 @@ describe('My Login application', () => {
     before('should login with valid credentials', async () => {
         await LoginPage.open()
         await browser.maximizeWindow();
-        await LoginPage.login('tupm@yopmail.com', 'CLMAdmin2024')
+        await LoginPage.login('tupm@yopmail.com', 'CLMAdmin2024');
        //await expect(SecurePage.flashAlert).toBeExisting()
        // await expect(SecurePage.flashAlert).toHaveTextContaining()
        //await LoginPage.Toast();
- 
-       it('Add new user', async () => {
-
+    })
     
+       it('Add new user', async () => {
+        await LoginPage.createUser();
     })
 
-    it('Add organization image', async () => {
+    it('Add organization', async () => {
     })
 
     after('logout', async () => {
-
+        await LoginPage.logoutuser2();
     })
     })
-})
 

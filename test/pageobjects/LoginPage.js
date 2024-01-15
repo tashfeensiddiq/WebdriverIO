@@ -12,27 +12,8 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
 
-    
 
-    
 
-    get btnUserAdd () {return $("//span[contains(text(),'NUTZER ZUWEISEN')]");}
-
-    get inputEmail () {return $("[formcontrolname='Email']")}
-
-    get inputOrg () {return $("input[data-placeholder='Unternehmen']");}
-
-    get inputOrgName() {return $("span=Halter UK");}
-
-    get inputRole() {return $("span=Rolle");}
-
-    get inputRoleType() {return $("span=Projektmanager");}
-
-    get createUser() {return $("span=Benutzer einladen");}
-
-    get clickUser() {return $("p=TU PM");}
-
-    get logoutButton() {return $("span=Abmelden");}
 
     get ToastMessage () {return $("p=1 Einladung wurde gesendet");}
 
@@ -55,11 +36,51 @@ class LoginPage extends Page {
        await locators.loginpage2.btnSubmit.click();
        await browser.pause(10000);
 
+
+    }
+
+    async createUser () {
+
         await locators.module.btnTeams.click();
         await browser.pause(10000);
 
+
+        await locators.createuser3.btnUserAdd.click();
+        await browser.pause(3000);
+
+        await locators.createuser3.inputEmail.setValue("auto12@yopmail.com");
+        await browser.pause(3000);
+
+        await locators.createuser3.inputOrg.click();
+        await browser.pause(3000);
+
+        await locators.createuser3.inputOrgName.click();
+        await browser.pause(2000);
+
+        await locators.createuser3.inputRole.click();
+        await browser.pause(3000);
+
+        await locators.createuser3.inputRoleType.click();
+        await browser.pause(3000);
+
+        await locators.createuser3.createUser.click();
+        await browser.pause(5000);
+
+        this.Toast();
+        await expect(await this.ToastMessage).toHaveTextContaining('1 Einladung wurde gesendet')
+
+    }
+
+        
+
+            async createorg2 () {
+
         await locators.teams.btnOrgAdd.click();
         await browser.pause(3000);
+
+        
+
+        /*
 
         await locators.assignorg.OrgLogoAdd.click();
         await browser.pause(2000);
@@ -79,45 +100,26 @@ class LoginPage extends Page {
         await this.fileUpload(filePath, element)
         await locators.assignorg.OrgLogoAddModalSave.click();
 
+            */
+
+            }
+
+
+
+
+    async logoutuser2 () {
     
 
-
-
-        /*
-
-        await this.btnUserAdd.click();
-        await browser.pause(3000);
-
-        await this.inputEmail.setValue("auto6@yopmail.com");
-        await browser.pause(3000);
-
-        await this.inputOrg.click();
-        await browser.pause(3000);
-
-        await this.inputOrgName.click();
-        await browser.pause(2000);
-
-        await this.inputRole.click();
-        await browser.pause(3000);
-
-        await this.inputRoleType.click();
-        await browser.pause(3000);
-
-        await this.createUser.click();
-
-        this.Toast();
-        await expect(await this.ToastMessage).toHaveTextContaining('1 Einladung wurde gesendet')
-
-        await this.clickUser.click();
+        await locators.logout3.clickUser.click();
         await browser.pause(1500);
 
-        await this.logoutButton.click();
+        await locators.logout3.logoutButton.click();
         await browser.pause(10000);
 
         await browser.browserClose;
-*/
-
     }
+
+
 
     async fileUpload(url, upload_file_element) {
         const __filename = fileURLToPath(import.meta.url);

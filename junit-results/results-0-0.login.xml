@@ -1,2 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites>
+  <testsuite name="My Login application" timestamp="2024-01-15T18:06:10" time="61.318" tests="2" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application"/>
+      <property name="capabilities" value="chrome.120_0_6099_109.windows"/>
+      <property name="file" value="file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add new user" time="30.514">
+      <failure/>
+      <error message="this.Toast is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/elements - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/elements - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/elements - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/elements - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/elements - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_77/click - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":"//span[contains(text(),'NUTZER ZUWEISEN')]"}
+RESULT: {"using":"xpath","value":"//span[contains(text(),'NUTZER ZUWEISEN')]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_128/click - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"css selector","value":"[formcontrolname='Email']"}
+RESULT: {"using":"css selector","value":"[formcontrolname='Email']"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_129/clear - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_129/value - {"text":"auto12@yopmail.com"}
+RESULT: {"text":"auto12@yopmail.com"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"css selector","value":"input[data-placeholder='Unternehmen']"}
+RESULT: {"using":"css selector","value":"input[data-placeholder='Unternehmen']"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_130/click - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_138/click - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Rolle\"] | .//span[not(.//span[normalize-space(text()) = \"Rolle\"]) and normalize-space() = \"Rolle\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Rolle\"] | .//span[not(.//span[normalize-space(text()) = \"Rolle\"]) and normalize-space() = \"Rolle\"]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_139/click - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Projektmanager\"] | .//span[not(.//span[normalize-space(text()) = \"Projektmanager\"]) and normalize-space() = \"Projektmanager\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Projektmanager\"] | .//span[not(.//span[normalize-space(text()) = \"Projektmanager\"]) and normalize-space() = \"Projektmanager\"]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_140/click - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Benutzer einladen\"] | .//span[not(.//span[normalize-space(text()) = \"Benutzer einladen\"]) and normalize-space() = \"Benutzer einladen\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Benutzer einladen\"] | .//span[not(.//span[normalize-space(text()) = \"Benutzer einladen\"]) and normalize-space() = \"Benutzer einladen\"]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_141/click - {}
+RESULT: {}
+COMMAND: GET /session/1f031325ed78b3b465f922462adb6ddd/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.Toast is not a function
+    at LoginPage.createUser (file:///D:/Selise_Automation/WebdriverIO/test/pageobjects/LoginPage.js:70:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.5783435696301626:17:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add organization" time="0.002">
+      <system-out><![CDATA[
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":".//p[normalize-space(text()) = \"TU PM\"] | .//p[not(.//p[normalize-space(text()) = \"TU PM\"]) and normalize-space() = \"TU PM\"]"}
+RESULT: {"using":"xpath","value":".//p[normalize-space(text()) = \"TU PM\"] | .//p[not(.//p[normalize-space(text()) = \"TU PM\"]) and normalize-space() = \"TU PM\"]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_144/click - {}
+RESULT: {}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Abmelden\"] | .//span[not(.//span[normalize-space(text()) = \"Abmelden\"]) and normalize-space() = \"Abmelden\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Abmelden\"] | .//span[not(.//span[normalize-space(text()) = \"Abmelden\"]) and normalize-space() = \"Abmelden\"]"}
+COMMAND: POST /session/1f031325ed78b3b465f922462adb6ddd/element/BB3B2DCC7587463BDD1CAB5BE23B14A8_element_149/click - {}
+RESULT: {}
+COMMAND: DELETE /session/1f031325ed78b3b465f922462adb6ddd - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

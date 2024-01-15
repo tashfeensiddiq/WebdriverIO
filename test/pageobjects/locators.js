@@ -6,6 +6,8 @@ class locators{
         this.loginpage2 = new Login();
         this.module = new ModuleList();
         this.teams = new TeamsModule();
+        this.createuser3 = new CreateUser2();
+        this.logout3 = new logout2();
 
     }
 
@@ -29,6 +31,22 @@ class locators{
         get OrgLogoAdd() { return $("span=HOCHLADEN"); }
         get OrgLogoAddModal() { return $("input[type='file']"); }
         get OrgLogoAddModalSave() { return $("span=SAVE");}
+    }
+
+    class CreateUser2{
+        get btnUserAdd () {return $("//span[contains(text(),'NUTZER ZUWEISEN')]");}
+        get inputEmail () {return $("[formcontrolname='Email']");}
+        get inputOrg () {return $("input[data-placeholder='Unternehmen']");}
+        get inputOrgName() {return $("span=Halter UK");}
+        get inputRole() {return $("span=Rolle");}
+        get inputRoleType() {return $("span=Projektmanager");}
+        get createUser() {return $("span=Benutzer einladen");}
+    }
+
+
+    class logout2{
+        get clickUser() {return $("p=TU PM");}
+        get logoutButton() {return $("span=Abmelden");}
     }
 
 
