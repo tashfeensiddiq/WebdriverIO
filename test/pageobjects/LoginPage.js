@@ -48,7 +48,7 @@ class LoginPage extends Page {
         await locators.createuser3.btnUserAdd.click();
         await browser.pause(3000);
 
-        await locators.createuser3.inputEmail.setValue("auto12@yopmail.com");
+        await locators.createuser3.inputEmail.setValue("auto13@yopmail.com");
         await browser.pause(3000);
 
         await locators.createuser3.inputOrg.click();
