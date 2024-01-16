@@ -14,15 +14,12 @@
     "@wdio/spec-reporter": "^8.16.22",
     "allure-commandline": "^2.25.0",
     "wdio-intercept-service": "^4.4.0",
-    "wdio-video-reporter": "^5.1.0"
+    "wdio-video-reporter": "^4.0.5"
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
     "login": "npx wdio run ./wdio.conf.js --suite login",
     "otherfeature": "npx wdio run ./wdio.conf.js --suite otherfeature",
     "publish": "npx allure generate --clean && npx allure serve allure-results"
-  },
-  "dependencies": {
-    "wdio-video-reporter": "^5.1.0"
   }
 }

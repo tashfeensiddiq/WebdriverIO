@@ -1,54 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="My Login application" timestamp="2024-01-15T22:54:22" time="31.32" tests="3" failures="2" errors="2" skipped="0">
+  <testsuite name="My Login application" timestamp="2024-01-16T08:28:51" time="59.148" tests="2" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="My Login application"/>
       <property name="capabilities" value="chrome.120_0_6099_109.windows"/>
       <property name="file" value="file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js"/>
     </properties>
-    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add new user" time="13.528">
+    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add new user" time="29.604">
       <failure/>
-      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=120.0.6099.109)"/>
+      <error message="Can't call click on element with selector &quot;span=Halter UK&quot; because element wasn't found"/>
       <system-out><![CDATA[
-COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element - {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
 RESULT: {"using":"xpath","value":"//span[contains(@class,'nav-link-title ng-star-inserted')and contains(text(), 'Team')]"}
-COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element/F1B18700CAFCAEE07A256DB046E4F7FF_element_106/click - {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element/15C43B439662723F8D58A3A52614FDFD_element_97/click - {}
 RESULT: {}
-COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"xpath","value":"//span[contains(text(),'NUTZER ZUWEISEN')]"}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/alert/text - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element - {"using":"xpath","value":"//span[contains(text(),'NUTZER ZUWEISEN')]"}
 RESULT: {"using":"xpath","value":"//span[contains(text(),'NUTZER ZUWEISEN')]"}
-COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element/F1B18700CAFCAEE07A256DB046E4F7FF_element_150/click - {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element/15C43B439662723F8D58A3A52614FDFD_element_140/click - {}
 RESULT: {}
-COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"css selector","value":"[formcontrolname='Email']"}
-COMMAND: GET /session/1d5f62a9083ba9e35665eea4228e5da9/screenshot - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/alert/text - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element - {"using":"css selector","value":"[formcontrolname='Email']"}
+RESULT: {"using":"css selector","value":"[formcontrolname='Email']"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element/15C43B439662723F8D58A3A52614FDFD_element_141/clear - {}
+RESULT: {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/alert/text - {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element/15C43B439662723F8D58A3A52614FDFD_element_141/value - {"text":"auto12@yopmail.com"}
+RESULT: {"text":"auto12@yopmail.com"}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/alert/text - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element - {"using":"css selector","value":"input[data-placeholder='Unternehmen']"}
+RESULT: {"using":"css selector","value":"input[data-placeholder='Unternehmen']"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element/15C43B439662723F8D58A3A52614FDFD_element_142/click - {}
+RESULT: {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/alert/text - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Halter UK\"] | .//span[not(.//span[normalize-space(text()) = \"Halter UK\"]) and normalize-space() = \"Halter UK\"]"}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
 ]]></system-out>
       <system-err><![CDATA[
-no such window: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.109)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async LoginPage.createUser (file:///D:/Selise_Automation/WebdriverIO/test/pageobjects/LoginPage.js:51:9)
-    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.42409661029946744:18:9)
+Error: Can't call click on element with selector "span=Halter UK" because element wasn't found
+    at async LoginPage.createUser (file:///D:/Selise_Automation/WebdriverIO/test/pageobjects/LoginPage.js:57:9)
+    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.4312856123237838:18:9)
 ]]></system-err>
     </testcase>
-    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add organization" time="0.002">
+    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="Add organization" time="0.001">
       <system-out><![CDATA[
-COMMAND: POST /session/1d5f62a9083ba9e35665eea4228e5da9/element - {"using":"xpath","value":".//p[normalize-space(text()) = \"TU PM\"] | .//p[not(.//p[normalize-space(text()) = \"TU PM\"]) and normalize-space() = \"TU PM\"]"}
-COMMAND: DELETE /session/1d5f62a9083ba9e35665eea4228e5da9 - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element - {"using":"xpath","value":".//p[normalize-space(text()) = \"TU PM\"] | .//p[not(.//p[normalize-space(text()) = \"TU PM\"]) and normalize-space() = \"TU PM\"]"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//p[normalize-space(text()) = \"TU PM\"] | .//p[not(.//p[normalize-space(text()) = \"TU PM\"]) and normalize-space() = \"TU PM\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element/15C43B439662723F8D58A3A52614FDFD_element_148/click - {}
+RESULT: {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/alert/text - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Abmelden\"] | .//span[not(.//span[normalize-space(text()) = \"Abmelden\"]) and normalize-space() = \"Abmelden\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Abmelden\"] | .//span[not(.//span[normalize-space(text()) = \"Abmelden\"]) and normalize-space() = \"Abmelden\"]"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/element/15C43B439662723F8D58A3A52614FDFD_element_150/click - {}
+RESULT: {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/alert/text - {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ceeb251674924cc71c1af169396a4eb5/se/log/types - {}
+RESULT: {}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/se/log - {"type":"driver"}
+COMMAND: POST /session/ceeb251674924cc71c1af169396a4eb5/se/log - {"type":"browser"}
+RESULT: {"type":"driver"}
+RESULT: {"type":"browser"}
+COMMAND: DELETE /session/ceeb251674924cc71c1af169396a4eb5 - {}
 RESULT: {}
 ]]></system-out>
-    </testcase>
-    <testcase classname="chrome.120_0_6099_109.windows.My_Login_application" name="after all hook for My Login application" time="0.06">
-      <failure/>
-      <error message="no such window: target window already closed&#xA;from unknown error: web view not found&#xA;  (Session info: chrome=120.0.6099.109)"/>
-      <system-err><![CDATA[
-no such window: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.109)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async LoginPage.logoutuser2 (file:///D:/Selise_Automation/WebdriverIO/test/pageobjects/LoginPage.js:113:9)
-    at async Context.<anonymous> (file:///D:/Selise_Automation/WebdriverIO/test/specs/test.e2e.js?invalidateCache=0.42409661029946744:25:9)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

@@ -1,4 +1,4 @@
-import environment from "./environment.js";
+import environment from './environment.js';
 import allure from 'allure-commandline';
 import video from 'wdio-video-reporter';
 
@@ -145,11 +145,12 @@ export const config = {
     [
 
       [video, {
-        saveAllVideos: false,       // If true, also saves videos for successful test cases
+        saveAllVideos: true,       // If true, also saves videos for successful test cases
         videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
       }],
 
-        'spec',
+      'spec',
+
         [
           'junit',
           {
@@ -159,9 +160,19 @@ export const config = {
             },
           },
         ],
-        ['allure', { outputDir: 'allure-results' }],
+
+        [
+          'allure', 
+          { 
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: true,
+          }],
+
+
       ],
-    
+
+
       onComplete: function () {
         const reportError = new Error('Could not generate Allure report');
         const generation = allure(['generate', 'allure-results', '--clean']);
@@ -187,6 +198,8 @@ export const config = {
           await browser.takeScreenshot();
         }
       },
+
+      
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
